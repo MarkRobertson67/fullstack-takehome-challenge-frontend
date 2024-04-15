@@ -1,16 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import HomePage from './components/Pages/HomePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        
-        <p>
-          Hello Front End
-        </p>
-      </header>
+    <div>
+      <HomePage />
     </div>
   );
 }

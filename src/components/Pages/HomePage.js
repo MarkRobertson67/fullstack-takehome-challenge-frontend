@@ -13,7 +13,7 @@ const HomePage = () => {
       const response = await fetch(`${apiUrl}/raffles`);
       if (response.ok) {
         const data = await response.json();
-        setRaffles(data.data); // Assuming response data structure matches your API
+        setRaffles(data.data); 
       } else {
         console.error('Failed to fetch raffles');
       }
@@ -24,6 +24,7 @@ const HomePage = () => {
 
   useEffect(() => {
     fetchRaffles();
+     // eslint-disable-next-line
   }, []); // Fetch raffles once on component mount
 
   const handleCreateRaffle = async (event) => {
